@@ -23,10 +23,6 @@ div {
     color: hotpink;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-}
-
 .timeline {
     position: relative;
     margin: 2vw 0;
@@ -46,10 +42,9 @@ body {
 
 .timeline-item {
     position: relative;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    background-color: #f8f9fa; /* Adjust item background color */
+    padding: 1.3vw;
+    margin-bottom: 1.2vw;
+    border-radius: 0.32vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
     z-index: 2;
 }
@@ -58,18 +53,15 @@ body {
     content: '';
     position: absolute;
     top: 50%;
-    left: -6px;
-    width: 12px;
-    height: 12px;
+    left: -0.7vw;
+    width: 1.5vw;
+    height: 3vh;
     border-radius: 50%;
     background-color: #ffc2cd; /* Adjust circle color */
     transform: translateY(-50%);
     z-index: 3;
 }
 
-.timeline-item:last-child {
-    margin-bottom: 0;
-}
 
 /* Add different patterns for each timeline item */
 .pattern1 {
@@ -110,12 +102,4 @@ body {
 
 .pattern10 {
     background-image: url('pattern10.jpg');
-}
-
-/* Add more patterns as needed */
-
-/* Add styles for icons */
-.icon {
-    font-size: 20px;
-    color: #ff6b81; /* Pink color for icons */
 }

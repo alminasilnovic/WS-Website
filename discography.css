@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-
 }
 
 p {
@@ -10,7 +9,6 @@ p {
 }
 
 header {
-    color: #fff;
     background-color: #ffc2cd;
     text-align: center;
     padding: 1vw;
@@ -22,7 +20,7 @@ header a {
 }
 
 #margin-top {
-    margin-top: 5rem;
+    margin-top: 5vw;
 }
 
 #bold {
@@ -48,8 +46,8 @@ header a {
 .flip-card {
     width: 19.5vw; /* Fixed width for each card */
     height: 61.5vh; /* Fixed height for each card */
-    perspective: 1000px;
-    border: 1px solid #fff;
+    perspective: 65.1vw;
+    border: 1pxy solid #fff;
     border-radius: 0.7vw;
     padding: 2vw;
 }

@@ -1,19 +1,23 @@
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     color: white;
 }
 
+/* Justify Paragraph Text */
 p {
     text-align: justify;
 }
 
+/* Custom Pink Text Styling */
 .pink-text {
     color: #ff8f9b;
     font-weight: bold;
 }
 
+/* Logo Styling */
 .logo {
-    max-width: 5rem;
+    max-width: 5.2vw;
 }
 
 .logo-image {
@@ -22,41 +26,56 @@ p {
     filter: brightness(0) invert(1);
 }
 
+/* Contact and Read More Buttons Styling */
+.btn-contact,
+.btn-light {
+    margin-top: 1.3vw;
+    font-size: 1.2vw;
+}
+
 .btn-contact {
-    margin-top: 20px;
     border-color: darkgray;
-    padding: 15px 60px;
-    font-size: 18px;
+    padding: 1vw 4vw;
     color: white;
     background-color: transparent;
 }
 
-.btn-contact:hover, .btn-contact:active, .btn-contact:visited {
+.btn-contact:hover,
+.btn-contact:active,
+.btn-contact:visited {
     color: black;
     background-color: darkgray;
 }
 
 .btn-light {
-    margin-top: 20px;
     border-color: #ffdce2;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 1vw 2vw;
 }
 
-.btn-light, .btn-light:hover, .btn-light:active, .btn-light:visited {
+.btn-light,
+.btn-light:hover,
+.btn-light:active,
+.btn-light:visited {
     color: white;
     background-color: #ffdce2;
     border-color: #ffdce2;
 }
 
+/* Margin Styling */
 .margin1 {
-    margin: 20vh 7vw 0 7vw;
+    margin: 10% 7vw 0 7vw;
 }
 
 .margin2 {
     margin: 0 7vw;
 }
 
+/* Gradient Overlay for Background Image */
+/* Schmankerl 1 (Fading Effect)*/
+/* Content ersetzt content im html (after also nach Text) */
+/* Gradient macht den Blur Effekt */
+/* bottom: 0, left: 0 und right: 0, dass das Overlay über die gesamte Breite des Elternelements (.bg-image) von unten nach oben verläuft */
+/* Content hat keine Funktion, wird aber bei Pseudo Elementen wie after und before BENÖTIGT - deswegen leer */
 .bg-image::after {
     content: "";
     position: absolute;
@@ -67,6 +86,7 @@ p {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff);
 }
 
+/* Background Image Styling */
 .bg-image {
     background-image: url("firstslide.png");
     background-repeat: no-repeat;
@@ -75,43 +95,46 @@ p {
     height: 100%;
 }
 
+/* Space Element Styling */
 #space {
-    min-height: 10vw;
+    min-height: 5vw;
 }
 
+/* Navigation Bar Styling */
 .bg-nav {
     background-color: #ffc2cd;
 }
 
+/* Dropdown Styling */
 .bg-dropdown {
     background-color: #ffdce2;
 }
 
+/* Margin Left Styling */
 .m-left {
     margin-left: 2vw;
 }
 
 nav {
-    position: fixed;
     top: 0;
-    width: 100%;
     z-index: 3;
 }
 
+/* Navbar Link Styling with Underline Animation */
 nav>div a {
     text-decoration: none;
     font-weight: bold;
     position: relative;
     display: inline-block;
-    margin: 2px;
-    padding: 10px;
+    margin: 0.2vw;
+    padding: 1vw;
 }
 
 nav>div a::before {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 0.2vh;
     bottom: 0;
     left: 50%;
     background-color: white;
@@ -123,10 +146,7 @@ nav>div a:hover::before {
     width: 100%;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
+/* Dropdown Menu Styling */
 .dropdown-menu.bg-dropdown {
     border: none;
 }
@@ -137,42 +157,49 @@ nav>div a:hover::before {
 
 .dropdown-menu.bg-dropdown a:hover {
     background-color: #ffdce2;
-    color: white;
 }
 
+/* Flex Display for Card Section */
 .row {
     display: flex;
     justify-content: center;
 }
 
+/* Individual Card Styling with Hover Effect */
 .card {
     margin: 0 4vw;
     width: 18vw;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
 .card:hover {
     transform: scale(1.1);
 }
 
+/* Card Image Styling */
 .card-img-top {
     height: 37vh;
     object-fit: cover;
 }
 
+/* Footer Styling */
 footer {
     width: 100%;
     background-color: #ffc2cd;
     color: white;
-    padding: 20px 0;
+    padding: 1.3vw 0;
 }
 
+/* Footer Link Styling */
 footer a {
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1vw;
 }
 
+/* Footer Link Hover Styling */
 footer a:hover {
-    color: #ced4da;
+    color: deeppink;
 }
+
+

@@ -20,7 +20,7 @@ div {
 }
 
 div img {
-    width: 11vw;
+    width: 12vw;
     height: 27vh; /* Fixed height for all images */
     object-fit: cover;
     border-radius: 8px;
