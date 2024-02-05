@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+.pink-text {
+    color: #ff8f9b;
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.btn-contact {
+    margin-top: 20px;
+    border-color: darkgray;
+    padding: 15px 60px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+}
+
+.btn-contact:hover, .btn-contact:active, .btn-contact:visited {
+    color: black;
+    background-color: darkgray;
+}
+
+.btn-light {
+    margin-top: 20px;
+    border-color: #ffdce2;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.btn-light, .btn-light:hover, .btn-light:active, .btn-light:visited {
+    color: white;
+    background-color: #ffdce2;
+    border-color: #ffdce2;
+}
+
+.margin1 {
+    margin: 20vh 7vw 0 7vw;
+}
+
+.margin2 {
+    margin: 0 7vw;
+}
+
+.bg-image::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 13%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff);
+}
+
+.bg-image {
+    background-image: url("firstslide.png");
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#space {
+    min-height: 10vw;
+}
+
+.bg-nav {
+    background-color: #ffc2cd;
+}
+
+.bg-dropdown {
+    background-color: #ffdce2;
+}
+
+.m-left {
+    margin-left: 2vw;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav>div a {
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+    padding: 10px;
+}
+
+nav>div a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+    transition: width 0.8s ease;
+}
+
+nav>div a:hover::before {
+    width: 100%;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu.bg-dropdown {
+    border: none;
+}
+
+.dropdown-menu.bg-dropdown a {
+    color: white;
+}
+
+.dropdown-menu.bg-dropdown a:hover {
+    background-color: #ffdce2;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 0 4vw;
+    width: 18vw;
+    transition: transform 0.3s; 
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-img-top {
+    height: 37vh;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    background-color: #ffc2cd;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer a:hover {
+    color: #ced4da;
+}

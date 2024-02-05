@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdeff3; /* Light Pink Background */
+}
+
+header {
+    padding: 1vw;
+    text-align: center;
+    background-color: #ffc2cd; /* Pink Header */
+}
+
+header a {
+    color: white;
+    text-decoration-line: none;
+}
+
+div {
+    margin-top: 10vh;
+    align-content: center;
+}
+
+div img {
+    width: 11vw;
+    height: 27vh; /* Fixed height for all images */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+
+div img:hover {
+    transform: scale(1.1);
+}

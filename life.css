@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdeff3; /* Light Pink Background */
+}
+
+header {
+    text-align: center;
+    padding: 1vw;
+    background-color: #ffc2cd; /* Pink Header */
+    color: #fff;
+}
+
+header a {
+    text-decoration-line: none;
+    color: #fff;
+}
+
+div {
+    text-align: center;
+    font-weight: bold;
+    color: hotpink;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.timeline {
+    position: relative;
+    margin: 2vw 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1vw;
+    background-color: #ffc2cd;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Adjust item background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    z-index: 2;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffc2cd; /* Adjust circle color */
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Add different patterns for each timeline item */
+.pattern1 {
+    background-image: url('pattern1.jpg');
+}
+
+.pattern2 {
+    background-image: url('pattern2.jpg');
+}
+
+.pattern3 {
+    background-image: url('pattern3.jpg');
+}
+
+.pattern4 {
+    background-image: url('pattern4.jpg');
+}
+
+.pattern5 {
+    background-image: url('pattern5.jpg');
+}
+
+.pattern6 {
+     background-image: url('pattern6.jpg');
+ }
+
+.pattern7 {
+    background-image: url('pattern7.jpg');
+}
+
+.pattern8 {
+    background-image: url('pattern8.jpg');
+}
+
+.pattern9 {
+    background-image: url('pattern9.jpg');
+}
+
+.pattern10 {
+    background-image: url('pattern10.jpg');
+}
+
+/* Add more patterns as needed */
+
+/* Add styles for icons */
+.icon {
+    font-size: 20px;
+    color: #ff6b81; /* Pink color for icons */
+}

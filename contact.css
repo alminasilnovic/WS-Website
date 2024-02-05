@@ -1,0 +1,17 @@
+.pink-theme-filter {
+    color: pink;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h2 {
+    color: pink;
+    text-align: center;
+}
+
+.media {
+    align-items: center;
+}
